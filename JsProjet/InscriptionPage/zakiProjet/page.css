@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    color: white;
+    top: -10px;
+}
+
+#title {
+    width: 10%;
+    height: 30%;
+    top: 100px;
+    color: bisque;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rosybrown;
+    justify-content: center;
+    align-items: center;
+    animation: background-animation 5s ease-in-out infinite;
+}
+
+@keyframes background-animation {
+    0% {
+        background-color: rosybrown;
+    }
+    50% {
+        background-color: mistyrose;
+    }
+    100% {
+        background-color: rosybrown;
+    }
+}
+
+.content-container {
+    display: flex;
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.img-container {
+    width: 50%;
+    height: 100%;
+    animation: slide-in-from-right 0.5s ease-out forwards;
+}
+
+@keyframes slide-in-from-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.form-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-div {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.input-div input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: mistyrose;
+    border: 0;
+    border-radius: 10px;
+}
+
+.input-div label {
+    font-size: 20px;
+}
+
+.input-div small {
+    font-size: 15px;
+    color: red;
+}
+
+.form-container form button {
+    background-color: #2F4858;
+    border: 0;
+    width: 50%;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.success {
+    outline: green solid 3px;
+}
+
+.error {
+    outline: red solid 3px;
+}
+
+.credit {
+    text-align: center;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.credit a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}

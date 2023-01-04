@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="page.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+
+
+        <div class="content-container">
+            <div class="form-container">
+                <form class="form">
+                    <div class="input-div">
+                        <label for="username">Username</label><br>
+                        <input type="text" id="username" name="username"><br>
+                        <small id="username_error"></small>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <small id="email_error"></small>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password" name="password"><br>
+                        <small id="password_error"></small>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="confirmation">Confirm Password</label><br>
+                        <input type="password" id="confirmation" name="confirmation"><br>
+                        <small id="confirmation_error"></small>
+                    </div>
+
+                    <button type="button" onclick="validate()"> Submit </button>
+
+                </form>
+            </div>
+
+
+            <div class="img-container">
+                <img src="image.jpg">
+            </div>
+
+        </div>
+
+    </div>
+    <script src="val.js"></script>
+</body>
+
+</html>
